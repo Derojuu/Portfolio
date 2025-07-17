@@ -14,7 +14,8 @@ const techStack = [
   { name: 'Tailwind CSS', level: 'Expert' },
   { name: 'JavaScript', level: 'Expert' },
   { name: 'HTML/CSS', level: 'Expert' },
-  { name: 'GitHub', level: 'Advanced' }
+  { name: 'GitHub', level: 'Advanced' },
+  { name: 'MSSQL', level: 'Advanced' }
 ];
 
 const achievements = [
@@ -30,13 +31,13 @@ export const AboutSection = () => {
       {/* Hero Section */}
       <div className="text-center space-y-6">
         <div className="w-32 h-32 mx-auto bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold">
-          JS
+          OA
         </div>
         <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
           Odumbo Abdulwaris
         </h1>
         <p className="text-2xl md:text-3xl text-muted-foreground font-light">
-          Senior Full Stack Developer
+          Full Stack Developer
         </p>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
           Passionate software engineer with 5+ years of experience building scalable web applications. 
@@ -61,7 +62,7 @@ export const AboutSection = () => {
           <div className="text-sm text-muted-foreground">Years Experience</div>
         </Card>
         <Card className="text-center p-6">
-          <div className="text-3xl font-bold text-green-600">50+</div>
+          <div className="text-3xl font-bold text-green-600">6+</div>
           <div className="text-sm text-muted-foreground">Projects Completed</div>
         </Card>
         <Card className="text-center p-6">
@@ -69,7 +70,7 @@ export const AboutSection = () => {
           <div className="text-sm text-muted-foreground">Technologies</div>
         </Card>
         <Card className="text-center p-6">
-          <div className="text-3xl font-bold text-orange-600">100K+</div>
+          <div className="text-3xl font-bold text-orange-600">10+</div>
           <div className="text-sm text-muted-foreground">Users Impacted</div>
         </Card>
       </div>

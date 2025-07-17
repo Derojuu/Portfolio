@@ -14,9 +14,9 @@ export const Footer = ({ sections, setActiveSection }: FooterProps) => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <h3 className="font-semibold mb-4">John Smith</h3>
+            <h3 className="font-semibold mb-4">Odumbo Abdulwaris</h3>
             <p className="text-sm text-muted-foreground">
-              Senior Full Stack Developer passionate about creating innovative web solutions.
+              Full Stack Developer passionate about creating innovative web solutions.
             </p>
           </div>
           <div>
@@ -50,7 +50,7 @@ export const Footer = ({ sections, setActiveSection }: FooterProps) => {
         </div>
         <Separator className="my-6" />
         <div className="text-center text-sm text-muted-foreground">
-          © 2024 John Smith. Built with React, TypeScript, and Tailwind CSS.
+          © 2025 Abdulwaris Odumbo. Built with React, TypeScript, and Tailwind CSS.
         </div>
       </div>
     </footer>
