@@ -97,7 +97,7 @@ export const AboutSection = () => {
       </div>
 
       {/* Enhanced About Me Section - Mobile Responsive */}
-      <Card className="max-w-6xl mx-auto hover-lift animate-stagger-2 bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 dark:from-gray-800 dark:via-blue-900/20 dark:to-purple-900/20 border-2 mx-4 sm:mx-6 lg:mx-auto">
+      <Card className="max-w-6xl mx-auto hover-lift animate-stagger-2 bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 dark:from-gray-800 dark:via-blue-900/20 dark:to-purple-900/20 border-2 sm:mx-6 lg:mx-auto">
         <CardHeader className="p-4 sm:p-6">
           <CardTitle className="flex items-center gap-2 sm:gap-3 text-xl sm:text-2xl md:text-3xl">
             <div className="p-2 sm:p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg animate-pulse">
