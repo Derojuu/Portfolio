@@ -148,6 +148,80 @@
     animation: pulse 4s ease-in-out infinite;
   }
 
+  .animate-wiggle {
+    animation: wiggle 0.5s ease-in-out;
+  }
+
+  .animate-slide-up-delayed {
+    animation: slideUp 1.2s ease-out forwards;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+  }
+
+  .animate-gradient-slow {
+    animation: gradientShift 8s ease-in-out infinite;
+    background-size: 400% 400%;
+  }
+
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+
+  /* Mobile-First Hover Effects */
+  .hover-scale {
+    @apply transition-transform duration-300 ease-out;
+  }
+  
+  .hover-scale:hover {
+    @apply scale-105;
+  }
+
+  /* Touch-friendly mobile hover effects */
+  @media (hover: hover) and (pointer: fine) {
+    .hover-lift {
+      @apply transition-all duration-300 ease-out;
+    }
+    
+    .hover-lift:hover {
+      @apply -translate-y-2 shadow-lg;
+    }
+
+    .hover-glow:hover {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    }
+  }
+
+  /* Mobile-optimized touch targets */
+  @media (max-width: 768px) {
+    .hover-scale:active {
+      @apply scale-95;
+    }
+    
+    .hover-lift:active {
+      @apply translate-y-0;
+    }
+  }
+
+  /* Enhanced Gradient Text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent;
+  }
+
+  .gradient-text-animated {
+    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient;
+  }
+
+  /* Mobile-responsive spacing utilities */
+  .mobile-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .mobile-margin {
+    @apply mx-4 sm:mx-6 lg:mx-8;
+  }
+
   .animate-spin-slow {
     animation: spin 3s linear infinite;
   }
@@ -327,6 +401,62 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Additional keyframes for mobile animations */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  .animate-float {
+    animation-duration: 4s; /* Faster animations on mobile */
+  }
+  
+  .animate-bounce-slow {
+    animation-duration: 2s; /* Faster bounce on mobile */
+  }
+  
+  /* Reduce transform intensity on mobile for better performance */
+  .hover-scale:active {
+    transform: scale(0.97);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .gradient-text,
+  .gradient-text-animated {
+    @apply text-foreground;
+    background: none;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .animate-float,
+  .animate-bounce-slow,
+  .animate-pulse-slow,
+  .animate-spin-slow,
+  .animate-gradient,
+  .animate-gradient-slow {
+    animation: none;
   }
 }
 
