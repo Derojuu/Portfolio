@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from 'react';
 import { Header } from '../components/layout/Header';
-import { MobileNavigation } from '../components/layout/MobileNavigation';
 import { Footer } from '../components/layout/Footer';
 import { AboutSection } from '../components/sections/AboutSection';
 import { ExperienceSection } from '../components/sections/ExperienceSection';
@@ -53,12 +52,6 @@ const Index = () => {
       <Header 
         darkMode={darkMode}
         toggleTheme={toggleTheme}
-        sections={sections}
-        activeSection={activeSection}
-        setActiveSection={setActiveSection}
-      />
-
-      <MobileNavigation 
         sections={sections}
         activeSection={activeSection}
         setActiveSection={setActiveSection}
