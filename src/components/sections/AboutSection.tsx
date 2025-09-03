@@ -14,7 +14,11 @@ const techStack = [
   { name: 'Tailwind CSS', level: 'Expert', icon: '🎨' },
   { name: 'JavaScript', level: 'Expert', icon: '💛' },
   { name: 'HTML/CSS', level: 'Expert', icon: '🌐' },
+  { name: 'PostgreSQL', level: 'Advanced', icon: '🐘' },
   { name: 'GitHub', level: 'Advanced', icon: '🐙' },
+  { name: 'Azure', level: 'Advanced', icon: '☁️' },
+  { name: 'Google Cloud', level: 'Advanced', icon: '🌩️' },
+  { name: 'Supabase', level: 'Advanced', icon: '⚡' },
   { name: 'MSSQL', level: 'Advanced', icon: '🔷' }
 ];
 

@@ -1,4 +1,3 @@
-
 import { Button } from "../ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { Badge } from "../ui/badge";
@@ -8,15 +7,41 @@ const projects = [
   {
     title: "Exam Complaint Management System",
     description: "Web-based complaint system for managing and tracking student exam-related issues in higher education institutions.",
-    longDescription: "Developed a full-stack complaint management system that allows students to submit, track, and manage exam complaints seamlessly. The system includes role-based authentication, secure file uploads, a dashboard interface for admins/staff, and a MySQL database for persistent storage. Built with Next.js, React, TailwindCSS, and server-side APIs for scalable interactions.",
-    tech: ["Next.js", "React", "TailwindCSS", "MySQL", "Node.js", "JWT", "Formidable", "ShadCN UI"],
+    longDescription: "Developed a full-stack complaint management system that allows students to submit, track, and manage exam complaints seamlessly. The system includes role-based authentication, secure file uploads, a dashboard interface for admins/staff, and a PostgreSQL database hosted on Supabase for persistent storage. Built with Next.js, React, TailwindCSS, and server-side APIs for scalable interactions.",
+    tech: ["Next.js", "React", "TailwindCSS", "PostgreSQL", "Supabase", "Node.js", "JWT", "Formidable", "ShadCN UI"],
     status: "Production",
     metrics: "Supports multi-role login, file uploads, and real-time status tracking",
     github: "https://github.com/Derojuu/exam-complaint-system",
-    live: "https://excos.vercel.app",
+    live: "https://exam-complaint-system.vercel.app",
     image: "/excos.png",
     featured: true,
     stats: { users: "500+", uptime: "99.9%", rating: "4.8/5" }
+  },
+    {
+    title: "MemeCard - Multiplayer Meme Game",
+    description: "Real-time multiplayer meme reaction card game where players compete to create the funniest combinations.",
+    longDescription: "Built a hilarious multiplayer party game where players join rooms, take turns setting funny situations, and respond with meme cards from their hand. Features real-time gameplay with Socket.IO, room-based matchmaking, voting system, and mobile-first design. Players create situations, others respond with memes, everyone votes for the funniest - laughter guaranteed! 😂",
+    tech: ["Next.js", "React", "Socket.IO", "Node.js", "PostgreSQL", "Supabase", "TailwindCSS", "Vercel"],
+    status: "Production",
+    metrics: "Real-time multiplayer gameplay with room codes and live voting system",
+    github: "https://github.com/Derojuu/memecard-game",
+    live: "http://meme-chaos.vercel.app/",
+    image: "/meme.png",
+    featured: true,
+    stats: { players: "200+", sessions: "1k+", rating: "4.9/5" }
+  },
+    {
+    title: "Battery Health Checker",
+    description: "Modern web application that analyzes Windows PowerCfg battery reports to calculate laptop battery health percentage.",
+    longDescription: "Created a user-friendly battery health analysis tool that parses Windows PowerCfg battery reports and calculates accurate health percentages. Features file upload functionality, comprehensive error handling, and provides clear battery health status with recommendations. Built with Next.js 15, TypeScript, and modern UI components for a seamless user experience.",
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Radix UI", "ShadCN UI", "Lucide Icons"],
+    status: "Production",
+    metrics: "Accurate battery health calculation with comprehensive error handling",
+    github: "https://github.com/Derojuu/BatteryHealthChecker",
+    live: "https://battery-health-checker-amber.vercel.app/",
+    image: "/battery.png",
+    featured: true,
+    stats: { accuracy: "99%", reports: "1k+", rating: "4.7/5" }
   },
   {
     title: "Ticket Management System",
@@ -67,7 +92,7 @@ export const ProjectsSection = () => {
             </div>
             <div className="flex items-center gap-1">
               <TrendingUp className="h-3 w-3 sm:h-4 sm:w-4 text-green-600" />
-              <span>6 Projects</span>
+              <span>5 Projects</span>
             </div>
             <div className="flex items-center gap-1">
               <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-600" />
